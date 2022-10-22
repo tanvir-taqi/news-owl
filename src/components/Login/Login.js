@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form'
 import toast from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
+import './Login.css'
 
 const Login = () => {
 
@@ -55,8 +56,8 @@ const Login = () => {
                     </Form.Group>
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
-                    Submit
+                <Button className='login-btn ' type="submit">
+                    Sign In
                 </Button>
                 <div className='my-3'>
                     <Form.Text className="text-danger">

@@ -1,0 +1,18 @@
+.sign-in-btn{
+    background: rgb(83, 81, 81);
+    width: 250px;
+    color: blanchedalmond;
+    padding: 5px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.6s ease;
+}
+.sign-in-btn:hover{
+    color: black;
+    background: blanchedalmond;
+}
+.social{
+    cursor: pointer;
+}

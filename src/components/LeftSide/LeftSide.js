@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './LeftSide.css'
 
 const LeftSide = () => {
     const [categories, setCategories] = useState([])
@@ -12,7 +13,7 @@ const LeftSide = () => {
     return (
         <div>
             {
-                categories.map(ct => <Link key={ct.id} to={`category/${ct.id}`}> <p>{ct.name}</p></Link>)
+                categories.map(ct => <Link className='menu-link' key={ct.id} to={`category/${ct.id}`}> <p>{ct.name}</p></Link>)
             }
         </div>
     );

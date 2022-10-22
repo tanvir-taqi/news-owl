@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.header{
+    background: rgb(83, 81, 81);
+}
+
+.header a{
+    
+    text-decoration: none;
+}
+.user-icon{
+    color: blanchedalmond;
+}
+.user-icon:hover{
+    color: black;
+}
+
+.brand-logo{
+    font-weight: 900;
+    font-size: 28px;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+    color: black;
+    text-shadow: 1px 1px 1px blanchedalmond;
+    
+}
+.brand-logo:hover{
+    color: black;
+}

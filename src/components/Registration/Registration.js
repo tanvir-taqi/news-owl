@@ -34,6 +34,7 @@ const Registration = () => {
                     navigate(from , {replace:true})
                 })
                 .catch(err => console.log(err))
+               
             }
     }
 
@@ -48,6 +49,7 @@ const Registration = () => {
         emailVerification()
         .then(res => {})
         .catch(err => console.log(err))
+        
     }
 
     return (

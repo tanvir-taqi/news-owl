@@ -7,6 +7,7 @@ import { FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
 import LeftSide from '../LeftSide/LeftSide';
+import './Header.css'
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext)
@@ -20,10 +21,10 @@ const Header = () => {
 
 
   return (
-    <div className='mb-5 '>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
+    <div className='mb-5 header'>
+      <Navbar collapseOnSelect expand="lg"   >
         <Container>
-          <Navbar.Brand ><Link to='/'>News Owl</Link></Navbar.Brand>
+          <Navbar.Brand ><Link to='/' className='brand-logo'>News Owl</Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -33,8 +34,8 @@ const Header = () => {
 
               <>
                 {
-                  user?.uid ? <span className='text-white pt-2'>{user?.displayName ? user?.displayName : user?.email} <Image roundedCircle src={user?.photoURL} style={{ height: '30px' }}></Image> </span>
-                    : <span> <Link to='/login'> <FaUser></FaUser> </Link> </span>
+                  user?.uid ? <Link to='/profile' className='text-white pt-2'>{user?.displayName ? user?.displayName : user?.email} <Image roundedCircle src={user?.photoURL} style={{ height: '30px' }}></Image> </Link>
+                    : <span> <Link to='/login' className='user-icon'> <FaUser></FaUser> </Link> </span>
                 }
 
 
